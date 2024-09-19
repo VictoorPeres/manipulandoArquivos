@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Victor Oliveira",
+    "login": "Victor",
+    "senha": "123MA",
+    "cpf": "01071155229"
+  },
+  {
+    "nome": "Emerson",
+    "login": "Cabelinho",
+    "senha": "mimim",
+    "cpf": "69696969696"
+  },
+  {
+    "nome": "Lurdes",
+    "login": "lurdinha",
+    "senha": "123VA",
+    "cpf": "69696969696"
+  }
+]
