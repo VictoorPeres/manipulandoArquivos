@@ -10,6 +10,7 @@ public class Arquivos {
 
     public static void main(String[] args) throws IOException {
 
+/*-----------Criando objetos do tipo pessoa-----------*/
         Pessoa pessoa1 = new Pessoa();
         pessoa1.setEmail("pessoa1@gmail.com");
         pessoa1.setNome("Pessoa 1");
@@ -25,27 +26,25 @@ public class Arquivos {
         pessoa3.setNome("Pessoa 3");
         pessoa3.setIdade(32);
 
-        /* Pode vir do banco de dados ou de qualquer fonte dedados */
+        /* -----------Criando uma lista de pessoas. Esses dados também podem vir do banco de dados-------- */
         List<Pessoa> pessoas = new ArrayList<Pessoa>();
         pessoas.add(pessoa1);
         pessoas.add(pessoa2);
         pessoas.add(pessoa3);
 
+            /*Instanciando a clasese FILE*/
                 File arquivo = new File("C:\\Users\\Samsung\\IdeaProjects\\arquivos\\src\\main\\java\\br\\com\\avancard\\arquivo.txt");
-        if(!arquivo.exists()){
-            arquivo.createNewFile();
+        if(!arquivo.exists()){ //Condição para o documento ser criado
+            arquivo.createNewFile(); //Criando o arquivo com o método createNewFile
         }
-        FileWriter escrever = new FileWriter(arquivo);
+        FileWriter escrever = new FileWriter(arquivo); //instanciando a classe FileWriter para escrever no arquivo
 
-        for (int i = 0; i < 10; i++){
-            escrever.write("Texto da linha " + (i+1) + "\n");
-        }
-
+        /* ForEach para percorrer a lista pessoas e escrever o resultado no arquivo*/
         for (Pessoa p : pessoas) {
-           escrever.write("Nome: " + p.getNome() + " \nIdade: " + p.getIdade() + "\n");
+           escrever.write( p.getNome() + ";" + p.getEmail() + ";" + p.getIdade() + "\n");
         }
 
-        escrever.flush();
-        escrever.close();
+        escrever.flush(); //O método flush garante que todos os dados serão gravados no arquivo
+        escrever.close(); //Fecha o arquivo
     }
 }
