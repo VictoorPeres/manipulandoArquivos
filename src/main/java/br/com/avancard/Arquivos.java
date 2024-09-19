@@ -33,7 +33,7 @@ public class Arquivos {
         pessoas.add(pessoa3);
 
             /*Instanciando a clasese FILE*/
-                File arquivo = new File("C:\\Users\\Samsung\\IdeaProjects\\arquivos\\src\\main\\java\\br\\com\\avancard\\arquivo.txt");
+                File arquivo = new File("C:\\Users\\Samsung\\IdeaProjects\\arquivos\\src\\main\\java\\br\\com\\avancard\\arquivo.csv");
         if(!arquivo.exists()){ //Condição para o documento ser criado
             arquivo.createNewFile(); //Criando o arquivo com o método createNewFile
         }

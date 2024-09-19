@@ -8,7 +8,7 @@ public class LerArquivoTxt {
     public static void main(String[] args) throws Exception {
 
         /* Associando o arquivo a classe FileInputStream */
-        FileInputStream entradaArquivo = new FileInputStream("C:\\Users\\Samsung\\IdeaProjects\\arquivos\\src\\main\\java\\br\\com\\avancard\\arquivo.txt");
+        FileInputStream entradaArquivo = new FileInputStream("C:\\Users\\Samsung\\IdeaProjects\\arquivos\\src\\main\\java\\br\\com\\avancard\\arquivo.csv");
 
         /* Instanciando a classe Scaneer e informando o arquivo via parametro da classe */
         Scanner lerArquivo = new Scanner(entradaArquivo, "UTF-8");
@@ -35,8 +35,9 @@ public class LerArquivoTxt {
                 pessoa.setIdade(Integer.parseInt(palavras[2]));
             }
             /* Imprimindo no console */
-                System.out.println("###################################");
-                System.out.println("Nome: " + pessoa.getNome() + "\nEmail: " + pessoa.getEmail() + "\nIdade: " + pessoa.getIdade());
+              /*  System.out.println("###################################");
+                System.out.println("Nome: " + pessoa.getNome() + "\nEmail: " + pessoa.getEmail() + "\nIdade: " + pessoa.getIdade());*/
+                System.out.println(pessoa.toString());
             }
 
 
