@@ -1,16 +1,3 @@
-Texto da linha 1
-Texto da linha 2
-Texto da linha 3
-Texto da linha 4
-Texto da linha 5
-Texto da linha 6
-Texto da linha 7
-Texto da linha 8
-Texto da linha 9
-Texto da linha 10
-Nome: Pessoa 1 
-Idade: 30
-Nome: Pessoa 2 
-Idade: 22
-Nome: Pessoa 3 
-Idade: 32
+Victor Oliveira;pessoa1@gmail.com;31
+
+Cadu Lima;pessoa2@gmail.com;5
